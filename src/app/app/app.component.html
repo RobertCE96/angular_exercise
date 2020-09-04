@@ -1,0 +1,15 @@
+<!-- Display in any possible way filtered people list, consider using flexbox -->
+<!-- It should give us all information about each person, name, lastname, age (sex is displayed as perfix to name) -->
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr *ngFor="let person of filteredPeople">
+    <td>{{person.sex}} {{person.name}}</td>
+    <td>{{person.lastname}}</td>
+    <td>{{person.age}}</td>
+  </tr>
+</table>
